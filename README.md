@@ -18,6 +18,7 @@ provider "harvester" {
 ```
 
 with the path to the kubeconfig file of your SUSE Virtualization Cluster
+
 Download it via Rancher -> Virt Management -> Choose your Cluster -> Support -> Download KubeConfig
 
 Ensure an ssh key is uploaded, do this via Advanced -> SSH Keys
@@ -42,7 +43,15 @@ Modify
 ```
     image = "default/image-rvjcv" # Change this to match your Harvester image
 ```
-to match the image-name of your SLES and Ubuntu resource definition.
+to match the image-name of your SLES and Ubuntu resource definition. Acquire the image *NAME* by running
+
+```
+> kubectl get virtualmachineimages
+NAME                     DISPLAY-NAME                                  SIZE         VIRTUALSIZE   AGE
+image-48ztx              opensuse-leap-15.5.x86_64-nocloud.qcow2       655360000    10737418240   336d
+image-8rfrn              noble-server-cloudimg-amd64.img               609969664    3758096384    44d
+image-ff2vg              sles15-sp6-minimal-vm.x86_64-cloud-gm.qcow2   292395008    895483904     274d
+```
 
 Modify the cloud-config section to match your username and content of your ssh public key, locate in both resources after:
 
