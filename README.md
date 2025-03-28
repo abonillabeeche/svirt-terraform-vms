@@ -72,4 +72,6 @@ terraform apply
 ```
 Once the VMs are no longer needed
 
-`terraform destroy`
+```
+terraform destroy
+```
