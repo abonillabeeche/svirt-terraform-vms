@@ -4,7 +4,7 @@
 This terraform template provisions 2 resources: a count of sles and another count of ubuntu VMs.
 Changing the image-name, cloud-config and ssh_keys value is necessary.
 
-The KubeConfig file path also most be provided.
+The KubeConfig file path also must be provided.
 
 ### Lets get Started!
 
