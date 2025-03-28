@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Config
+clusters:
+- name: "harvester-ai"
+  cluster:
+    server: "https://vaquero.5glinux.com/k8s/clusters/c-m-w667zjnh"
+
+users:
+- name: "harvester-ai"
+  user:
+    token: "kubeconfig-user-fq8rvxn5xv:5xz528pfmpwwpcdhrznd77rc2j5f8n9vtlqqbpnzr26bpn4w292qc4"
+
+
+contexts:
+- name: "harvester-ai"
+  context:
+    user: "harvester-ai"
+    cluster: "harvester-ai"
+
+current-context: "harvester-ai"
