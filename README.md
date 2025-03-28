@@ -1,12 +1,12 @@
 # SUSE Virtualization Terraform Template
-##Terraform Template to provision VMs on SUSE Virtualization
+## Terraform Template to provision VMs on SUSE Virtualization
 
 This terraform template provision 2 resources, a count of sles and another count of ubuntu VMs.
 Changing the image-name, cloud-config and ssh_keys value is necessary.
 
 The KubeConfig file path also most be provided.
 
-## Lets get Started!
+### Lets get Started!
 
 ```
 git clone https://github.com/abonillabeeche/svirt-terraform-vms.git
