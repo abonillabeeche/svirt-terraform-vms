@@ -35,6 +35,7 @@ resource "harvester_virtualmachine" "sles-bulk-vms" {
     size      = "20Gi"
     bus       = "virtio"
     boot_order  = 1
+    auto_delete = true # deletes volume upon deletion of VM
     image = "default/image-rvjcv" # Change this to match your Harvester image
   }
 
